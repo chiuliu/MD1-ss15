@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = prompt(
+        "Mời bạn nhập các số nguyên gồm 10 phần tử có dang -5,1,4,9..."
+      );
+      let m = prompt(
+        "Mời bạn nhập các số nguyên gồm 10 phần tử có dang -5,1,4,9..."
+      );
+      let a = n.split(",");
+      let b = m.split(",");
+      let arr = [];
+      for (let i = 0; i <= a.length - 1; i++) {
+        arr.push(+a);
+      }
+      for (let i = 0; i <= b.length - 1; i++) {
+        arr.push(+b);
+      }
+
+      let c = a.concat(b);
+      console.log(a, b, c);
+    </script>
+  </body>
+</html>

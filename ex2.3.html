@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Khởi tạo mảng ký tự
+      const arr = ["a", "1", "2", "b", "3", "c", "4"];
+
+      // Khai báo biến để lưu số lượng ký tự số
+      let count = 0;
+
+      // Duyệt qua từng phần tử trong mảng
+      for (let i = 0; i < arr.length; i++) {
+        // Kiểm tra xem phần tử có phải là ký tự số hay không
+        if (!isNaN(arr[i])) {
+          // Nếu là ký tự số, tăng biến count lên 1
+          count++;
+        }
+      }
+
+      // In ra số lượng ký tự số trong mảng
+      console.log("Số lượng ký tự số trong mảng:", count);
+    </script>
+  </body>
+</html>

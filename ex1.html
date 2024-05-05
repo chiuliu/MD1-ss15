@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      // khởi tạo nhập mảng số nguyên gồm 10 phần tử
+      let arr = new Array(10);
+      for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập số nguyên thứ ${i} :`);
+      }
+      console.log(arr);
+      //   let result = arr.find((element, index) => element >= 10);
+      //   console.log(result);
+      let count = 0;
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] >= 10) {
+          count++;
+        }
+      }
+      console.log(count);
+    </script> -->
+    <script>
+      // khởi tạo mảng số nguyên gồm 10 phần tử:
+      let n = prompt("mời bạn nhập dãy số nguyên dương gồm 10 phần tử");
+      let numbers = n.split(",");
+      let arr = [];
+
+      // for(let element of numbers){
+      //     arr.push(+element)
+      // }
+      // for(let i = 0; i<= numbers.length-1 ; i++){
+      //     arr.push(+numbers[i]);
+      // }
+
+      //arr.map() -> ánh xạ(cùng chuyển đổi) các phần tử trong 1 mảng theo 1coong thức nào đó
+
+      let arr1 = numbers.map((element, index) => +element);
+    </script>
+  </body>
+</html>
